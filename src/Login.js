@@ -45,7 +45,10 @@ function Login() {
         />
       </Link>
       <div className="login__container">
-        <h1>Sign-In</h1>
+        <h1>Sign-In or Sign-Up</h1>
+        <h4>Real email not required!!</h4>
+        <h4>use something like name5489@gmail.com</h4>
+
         <form action="">
           <h5>E-mail</h5>
           <input
@@ -61,6 +64,14 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
+          <button onClick={register} className="login__registerButton">
+            Sign Up
+          </button>
+
+          <h5 className="divider">
+            <span>Or</span>
+          </h5>
+
           <button
             type="submit"
             onClick={signIn}
@@ -69,16 +80,13 @@ function Login() {
             Sign In
           </button>
         </form>
+
         <p>
           By continuing, you agree to Not-Amazon's Conditions of Use and Privacy
           Notice.
         </p>
-        <h5 className="divider">
-          <span>New to Amazon?</span>
-        </h5>
-        <button onClick={register} className="login__registerButton">
-          Create new account
-        </button>
+        <h4>This page is used for both signing in and creating new account</h4>
+        <p>After filling the email and password click on one of the option</p>
       </div>
     </div>
   );
