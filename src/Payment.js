@@ -142,9 +142,15 @@ function Payment() {
                   // thousandsGroupStyle="lakh"
                   prefix={"₹"}
                 />
-                <button disabled={processing || disabled || succeeded}>
-                  <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
-                </button>
+
+                <div>
+                  <button
+                    className="glow-on-hover"
+                    disabled={processing || disabled || succeeded}
+                  >
+                    <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                  </button>
+                </div>
               </div>
 
               {/* Errors */}

@@ -2,8 +2,6 @@ import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 
-//
-
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
 
@@ -42,7 +40,9 @@ function Product({ id, title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt="" />
-      <button onClick={addToBasket}>Add to Basket</button>
+      <button className="glow-on-hover" onClick={addToBasket}>
+        Add to Basket
+      </button>
     </div>
   );
 }
