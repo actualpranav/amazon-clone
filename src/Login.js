@@ -70,7 +70,7 @@ function Login() {
           </button>
         </form>
         <p>
-          By continuing, you agree to Amazon's Conditions of Use and Privacy
+          By continuing, you agree to Not-Amazon's Conditions of Use and Privacy
           Notice.
         </p>
         <h5 className="divider">
